@@ -20,9 +20,14 @@
 # value iteration.
 
 def question2():
-    answerDiscount = 0.9
-    answerNoise = 0.2
-    return answerDiscount, answerNoise
+   """
+        Noise refers to how often an agent ends up in an unintended successor state, when they perform an action.
+        So we make Noise as almost 0 assuming agent always takes intended successor state.
+        Considering ideal case where discount is 1(.9) and noise is 0(.01). So we change the values accordingly
+    """
+   answerDiscount = .9
+   answerNoise = 0.01
+   return answerDiscount, answerNoise
 
 def question3a():
     answerDiscount = None
