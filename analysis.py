@@ -82,10 +82,13 @@ def question3e():
     return answerDiscount, answerNoise, answerLivingReward
 
 def question6():
-    answerEpsilon = None
-    answerLearningRate = None
-    return answerEpsilon, answerLearningRate
-    # If not possible, return 'NOT POSSIBLE'
+    """
+        Tried different variations for epsilon(0-1) and learning rate(0-1).Unable land at correct output.
+        epsilon-greedy concepts, If high epsilon, though we learn we make bad decisions. If epsilon is too low,
+        we don't explore much we don't learn much. so better way is to reduce epsilon over time and decreasing randomness
+        leading to optimal learning.
+    """
+    return 'NOT POSSIBLE'
 
 if __name__ == '__main__':
     print 'Answers to analysis questions:'
